@@ -1,0 +1,26 @@
+[
+	{
+		"id": 1,
+		"question": "Заголовок часто задаваемого вопроса",
+		"answer": "Blandit et et ac non interdum odio tristique diam vestibulum. Velit in quis consequat lacus fringilla amet elementum pharetra massa. Morbi euismod nulla cras adipiscing tristique aliquet purus adipiscing."
+	},
+	{
+		"id": 2,
+		"question": "Заголовок часто задаваемого вопроса с двумя абзацами",
+		"answer": [
+			"Blandit et et ac non. interdum odio tristique diam vestibulum. Velit in quis consequat lacus fringilla amet elementum pharetra massa. Morbi euismod nulla cras adipiscing tristique aliquet purus adipiscing. ",
+
+			"Blandit et et ac non. interdum odio tristique diam vestibulum. Velit in quis consequat lacus fringilla amet elementum pharetra massa. Morbi euismod nulla cras adipiscing tristique aliquet purus adipiscing."
+		]
+	},
+	{
+		"id": 3,
+		"question": "Заголовок часто задаваемого вопроса",
+		"answer": "Blandit et et ac non interdum odio tristique diam vestibulum. Velit in quis consequat lacus fringilla amet elementum pharetra massa. Morbi euismod nulla cras adipiscing tristique aliquet purus adipiscing."
+	},
+	{
+		"id": 4,
+		"question": "Заголовок часто задаваемого вопроса",
+		"answer": "Blandit et et ac non interdum odio tristique diam vestibulum. Velit in quis consequat lacus fringilla amet elementum pharetra massa. Morbi euismod nulla cras adipiscing tristique aliquet purus adipiscing."
+	}
+]

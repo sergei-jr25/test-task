@@ -1,0 +1,30 @@
+.arrow {
+	&__button {
+		position: relative;
+		z-index: 3;
+		width: 50px;
+		height: 50px;
+		border-radius: 100%;
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		svg {
+			fill: #e1e1e1;
+		}
+
+		cursor: pointer;
+		transition: fill 0.3s;
+
+		&:hover {
+			svg {
+				fill: #0dbc91;
+			}
+		}
+	}
+
+	&__prev {
+		svg {
+			transform: rotate(180deg);
+		}
+	}
+}

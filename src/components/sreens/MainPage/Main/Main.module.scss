@@ -1,0 +1,50 @@
+.main {
+	&__container {
+		display: grid;
+		gap: 70px;
+		@media (min-width: 992px) {
+			grid-template-columns: 416px 1fr;
+			align-items: center;
+			gap: 164px / 950px * 100%;
+		}
+		@media (max-width: 769px) {
+			gap: 35px;
+		}
+	}
+
+	&__body {
+		@media (max-width: 992px) {
+			order: 2;
+		}
+	}
+
+	&__title {
+		margin: 0px 0px 14px 0px;
+	}
+
+	&__media {
+		position: relative;
+
+		@media (min-width: 992px) {
+			width: calc(100vw - 50%);
+			padding: 0px 0px 131.571429% 0px;
+		}
+		@media (max-width: 992px) {
+			order: 1;
+			height: 533px;
+			margin: 0 -15px;
+		}
+		@media (max-width: 768px) {
+			height: 288px;
+		}
+		// height: 532px;
+		img {
+			position: absolute;
+			width: 100%;
+			height: 100%;
+			top: 0;
+			left: 0;
+			object-fit: cover;
+		}
+	}
+}

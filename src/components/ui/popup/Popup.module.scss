@@ -1,0 +1,134 @@
+.popup {
+	position: fixed;
+	top: 0;
+	left: 0;
+	bottom: 0;
+	right: 0;
+	padding: 30px 10px;
+	transition: visibility 0.8s ease 0s;
+	visibility: hidden;
+	pointer-events: none;
+	background-color: hsla(165, 36%, 42%, 0.9);
+
+	&__container {
+		position: absolute;
+		width: 100%;
+		max-width: 1440px;
+		margin: 0 auto;
+		top: 50%;
+		left: 50%;
+		transform: translate(-50%, -50%);
+		overflow: scroll;
+		@media (max-width: 768px) {
+		}
+	}
+
+	&__wrap {
+		// display: grid;
+		// align-items: center;
+
+		// gap: 138px /1440px * 100%;
+		// @media (min-width: 992px) {
+		// 	grid-template-columns: 1fr 452px;
+		// }
+		// @media (min-width: 768px) {
+		// 	padding: 60px /1440px * 100% 98px /1440px * 100%;
+		// }
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		min-height: 100%;
+		flex: 1 1 auto;
+		width: 100%;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+	}
+
+	&__content {
+		position: relative;
+		display: grid;
+		align-items: center;
+		background-color: #f8fbfa;
+		padding: 22px;
+		border-radius: 5px;
+		gap: 40px;
+		@media (min-width: 992px) {
+			grid-template-columns: 1fr 452px;
+		}
+		@media (min-width: 768px) {
+			gap: 138px /1440px * 100%;
+			padding: 60px 98px;
+		}
+	}
+
+	&__close {
+		font-size: 30px;
+		position: absolute;
+		background-color: transparent;
+
+		top: -32px;
+		right: 0;
+		@media (max-width: 992px) {
+			top: 22px;
+			right: 22px;
+			color: var(--mainColor);
+		}
+	}
+
+	&__body {
+		@media (max-width: 768px) {
+			max-width: 354px;
+		}
+		@media (max-width: 456px) {
+			max-width: 257px;
+		}
+	}
+
+	&__title {
+		font-size: 36px;
+		font-weight: 700;
+		line-height: 46.55px;
+		color: var(--mainColor);
+		margin: 0px 0px 16px 0px;
+		@media (max-width: 768px) {
+			font-size: 26px;
+			margin: 0px 0px 12px 0px;
+		}
+	}
+
+	&__text {
+		color: var(--mainColor);
+		@media (max-width: 768px) {
+			font-size: 14px;
+		}
+		// @media (max-width: 456px) {
+		// 	max-width: 250px;
+		// }
+	}
+
+	&__form {
+		display: grid;
+		gap: 16px;
+		@media (max-width: 768px) {
+			gap: 8px;
+		}
+
+		button {
+			justify-self: center;
+			padding: 11px 59px;
+			margin: 16px 0px 0px 0px;
+			@media (max-width: 768px) {
+				margin: 8px 0px 0px 0px;
+				padding: 11px 29px;
+			}
+		}
+	}
+}
+
+.open {
+	z-index: 150;
+	visibility: visible;
+	overflow: auto;
+	pointer-events: auto;
+}

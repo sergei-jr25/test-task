@@ -1,0 +1,21 @@
+.field {
+	&__label {
+		display: block;
+	}
+	input {
+		padding: 10px 16px;
+
+		border: 1px solid #e1e1e1;
+		width: 100%;
+		::placeholder {
+			font-size: 14px;
+			line-height: 21px;
+		}
+	}
+
+	&__error {
+		font-size: 12px;
+		margin: 8px 0px 0px 0px;
+		color: red;
+	}
+}
