@@ -13,10 +13,7 @@
 		display: grid;
 
 		min-width: 0;
-		@media (max-width: 992px) {
-			padding: 0 15px;
-		}
-
+		 
 		@media (min-width: 992px) {
 			grid-template-columns: 613px /1140px * 100% 1fr;
 		}
