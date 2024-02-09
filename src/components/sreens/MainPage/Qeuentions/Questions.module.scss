@@ -94,3 +94,10 @@
 		}
 	}
 }
+.list_jooter {
+	@media (max-width: 992px) {
+		display: grid;
+		grid-template-columns: auto;
+		gap: 15px;
+	}
+}

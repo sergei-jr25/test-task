@@ -10,7 +10,7 @@ import styles from './Footer.module.scss'
 
 const Footer: FC = () => {
 	return (
-		<div className={styles.footer}>
+		<footer className={styles.footer}>
 			<div className={`container ${styles.footer__container}`}>
 				<div className={styles.footer__left}>
 					<div className={styles.footer__logo}>
@@ -18,6 +18,7 @@ const Footer: FC = () => {
 							<Image src={logo} alt='logo' />
 						</Link>
 					</div>
+
 					<List className={styles.footer__list} />
 				</div>
 				<div className={styles.footer__socials}>
@@ -34,7 +35,7 @@ const Footer: FC = () => {
 					</Link>
 				</div>
 			</div>
-		</div>
+		</footer>
 	)
 }
 export default Footer

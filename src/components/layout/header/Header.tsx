@@ -10,7 +10,7 @@ import data from '@/data/header.json'
 import useMediaQuery from '@/hooks/useMediaQuery'
 import Image from 'next/image'
 import Link from 'next/link'
-import { FC, useState } from 'react'
+import { FC, useEffect, useState } from 'react'
 import styles from './Header.module.scss'
 
 const Header: FC = () => {
@@ -24,6 +24,14 @@ const Header: FC = () => {
 	const togglenMenu = () => {
 		setOpenMenu(!openMenu)
 	}
+
+	useEffect(() => {
+		if (openMenu) {
+			document.body.classList.add('menu-open') // Добавить класс к body
+		} else {
+			document.body.classList.remove('menu-open') // Удалить класс из body
+		}
+	}, [openMenu])
 
 	return (
 		<header className={styles.header}>
@@ -93,7 +101,7 @@ const Header: FC = () => {
 			{isLargeScreen && (
 				<div className={styles.header__bottom}>
 					<div className={`container ${styles.header__bottom_container}`}>
-						<List />
+						<List className={styles.header__list} />
 					</div>
 				</div>
 			)}
