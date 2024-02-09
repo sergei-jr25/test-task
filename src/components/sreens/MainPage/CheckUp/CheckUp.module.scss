@@ -13,14 +13,10 @@
 		display: grid;
 
 		min-width: 0;
-<<<<<<< HEAD
 		@media (max-width: 992px) {
 			// padding: 0 15px;
 		}
 
-=======
-		 
->>>>>>> 1a332588630470ec2a402c93f85c8977f07533ce
 		@media (min-width: 992px) {
 			grid-template-columns: 613px /1140px * 100% 1fr;
 		}
